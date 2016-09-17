@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Schedules</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/train.css">
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
+<h1> TRAIN TIMES </h1>
+<div class="panel-body">
+					<table class="table table-hover" id='trainTable'>
+						<thead>
+							<tr>
+								<th>Train Name</th>
+								<th>Destination</th>
+								<th>Frequency (min)</th>
+								<th>Next Arrival</th>
+								<th>Minutes Away</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+						</tbody>
+					</table>
+				</div> 
+
+<form>
+  <div class="form-group">
+    <label for="exampleName">Train Name</label>
+    <input type="email" class="form-control" id="trainNameInput" placeholder="Train Name">
+  </div>
+    <div class="form-group">
+    <label for="DestinationRole">Destination</label>
+    <input type="email" class="form-control" id="destinationInput" placeholder="Destination">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleStart">First Train Time (HH:mm -military time)</label>
+    <input type="email" class="form-control" id="startInput" placeholder="Start Time">
+  </div>
+
+  <div class="form-group">
+    <label for="frequencyRate">Frequency (min)</label>
+    <input type="email" class="form-control" id="frequencyInput" placeholder="Frequency">
+  </div>
+  <button class="btn btn-default" type="submit" id="newTrain">Submit</button>
+  </form>
+
+<script type="text/javascript" src="javascript/train2.js"></script>
+</body>
+</html>
